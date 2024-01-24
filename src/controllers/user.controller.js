@@ -64,7 +64,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
 
     if (!avatar) {
-        throw new ApiError(400, "avatar file is required");
+        throw new ApiError(500, "error while uploading avatar");
     }
 
     // save data in db
