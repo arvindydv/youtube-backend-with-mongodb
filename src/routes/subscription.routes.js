@@ -1,7 +1,6 @@
 import { Router } from "express";
 import { toggleSubscription, getUserChannelSubscribers, getAllSubscribedChannels } from "../controllers/subscription.controller.js";
 import { verifyJwt } from "../middlewares/auth.middleware.js";
-import { upload } from "../middlewares/multer.midleware.js";
 
 const router = Router();
 
